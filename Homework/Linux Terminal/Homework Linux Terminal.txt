@@ -1,0 +1,32 @@
+1	Посмотреть где я:												pwd
+2	Создать папку:												mkdir test
+3	Зайти в папку:												cd test
+4	Создать 3 папки:												mkdir ~/test/{test1,test2,test3}, mkdir ~/test/test{1,2,3}"
+5	Зайти в любую папку:											cd ~/test/test2/test4/test5
+6	Создать 5 файлов (3 txt, 2 json):									touch text{1,2,3}.txt json{1,2}.json
+7	Создать 3 папки:												mkdir folder{1,2,3}
+8	Вывести список содержимого папки:									ls -la
+9	Открыть любой txt файл. Написать туда что-нибудь, любой текст
+	Сохранить и выйти:											nano text1.txt -> "Hello World!" -> ctrl+x -> "y" -> enter
+10	Выйти из папки на уровень выше:									cd ..
+11	Переместить любые 2 файла, которые вы создали, в любую другую папку:			mv ~/test/1/text{1,2}.txt ~/test/5/
+12	Скопировать любые 2 файла, которые вы создали, в любую другую папку:			cp json{1,2}.json ~/test/5/
+13	Найти файл по имени:											find -name "text1.txt", find ~/ -name "text*.*"
+14	Просмотреть содержимое в реальном времени (команда grep) изучите как она работает:	grep -r "Hello World!" test
+15	Вывести несколько первых строк из текстового файла:						head -n 2  longtext.txt
+16	Вывести несколько последних строк из текстового файла:					tail -n 5  longtext.txt
+17	Просмотреть содержимое длинного файла (команда less) изучите как она работает:	less longtext.txt
+18	Вывести дату и время:											date
+19	Отправить http запрос на сервер.
+	http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000:			curl http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+20	Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:		nano test.sh -> 	#!/bin/bash
+																		echo ""Hello World!""
+																		cd test
+																		mkdir -p ~/test/{test4,test5,test6}
+																		cd ~/test/test4
+																		touch ~/test/text{1,2,3}.txt ~/test/json{1,2}.json
+																		mkdir -p ~/test/directory{1,2,3}
+																		ls ~/test/
+																		find -name "text2.txt"
+																		ctrl+x -> Enter ->
+																		sudo bash ./test.sh"
