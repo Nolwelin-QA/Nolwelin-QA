@@ -1,19 +1,19 @@
 GitHub. Homework_2
 1. На локальном репозитории сделать ветки для:
-- Postman													                            git branch Postman
-- Jmeter													                            git branch Jmeter
-- CheckLists												                            git branch CheckLists
-- Bug_Reports												                            git branch Bug_Reports
-- SQL														                            git branch SQL
-- Charles													                            git branch Charles
-- Mobile_testing												                        git branch Mobile_testing
+- Postman													                            										git branch Postman
+- Jmeter													                            										git branch Jmeter
+- CheckLists												                            									git branch CheckLists
+- Bug_Reports												                            									git branch Bug_Reports
+- SQL														                            											git branch SQL
+- Charles													                            										git branch Charles
+- Mobile_testing												                        									git branch Mobile_testing
 
-2. Запушить все ветки на внешний репозиторий:							                git push origin --all
+2. Запушить все ветки на внешний репозиторий:							                				git push origin --all
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта.
-4. Запушить структуру багрепорта на внешний репозиторий:					            git push --set-upstream origin Bug_Reports			
-5. Вмержить ветку Bag Reports в main:								                    git checkout main -> git merge Bug_Reports
-6. Запушить main на внешний репозиторий:								                git push	
+4. Запушить структуру багрепорта на внешний репозиторий:					            		git push --set-upstream origin Bug_Reports			
+5. Вмержить ветку Bag Reports в main:								                    					git checkout main -> git merge Bug_Reports
+6. Запушить main на внешний репозиторий:								                					git push	
 7. В ветке CheckLists набросать структуру чек листа.					
-8. Запушить структуру на внешний репозиторий:							                git push --set-upstream origin CheckLists
+8. Запушить структуру на внешний репозиторий:							                				git push --set-upstream origin CheckLists
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main.
-10. Синхронизировать Внешнюю и Локальную ветки main:						            git checkout main -> git pull
+10. Синхронизировать Внешнюю и Локальную ветки main:						            			git checkout main -> git pull
