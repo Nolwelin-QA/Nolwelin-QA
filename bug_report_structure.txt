@@ -1,0 +1,52 @@
+Основные поля
+1. ID — уникальный идентификатор бага
+2. Заголовок (Title)
+3. Шаги воспроизведения (STR)
+4. Ожидаемый результат (Expected result)
+5. Фактический результат (Actual result)
+6. Серьезность (Severity)
+
+Дополнительные поля
+1. Краткое описание (Summary) 
+2. Скриншот, видео (Attachments)
+3. Ссылка на требование (Requirement) 
+4. Приоритет (Priority)
+5. Окружение (Environment)
+6. Статус (Status)
+7. Автор (Author, Reporter)
+8. Исполнитель (Assignee)
+9. Комментарии (Comments)
+10. Версия (Version in which the bug was found)
+11. Версия исправления (Version to which the bug fix will be added)
+
+OR
+I. BUG ID: 
+1. ID number
+2. Name (Title)
+3. Reporter (Author)
+4. Submit Date
+
+II BUG OVERVIEW:
+1. Summary
+2. URL
+3. Attachments
+
+III. ENVIRONMENT:
+1. Platform
+2. Operating System
+3. Browser
+4. Version
+
+IV. BUG DETAILS:
+1. STR
+2. Expected result
+3. Actual Result
+4. Description
+
+V. BUG TRACKING:
+1. Severity
+2. Assigned to
+3. Priority
+
+VI. NOTES:
+1. Notes
