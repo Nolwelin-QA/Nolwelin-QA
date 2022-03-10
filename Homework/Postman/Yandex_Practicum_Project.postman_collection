@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "1e1ebe3b-6c51-4630-9f89-cc92840d6c97",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create_Courier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"Postman\",\n    \"password\": \"1234\",\n    \"firstName\": \"postman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4607c649-5f06-4b3d-9199-0fcda5c7acb7.serverhub.praktikum-services.ru/api/v1/courier",
+					"protocol": "https",
+					"host": [
+						"4607c649-5f06-4b3d-9199-0fcda5c7acb7",
+						"serverhub",
+						"praktikum-services",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Принять заказ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{server_url}}/api/v1/orders/accept/1?courierId=2",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"accept",
+						"1"
+					],
+					"query": [
+						{
+							"key": "courierId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отменить заказ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"track\": 798681\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/api/v1/orders/cancel?track=242994",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"cancel"
+					],
+					"query": [
+						{
+							"key": "track",
+							"value": "242994"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создать курьера",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"courier3\",\n    \"password\": \"3333\",\n    \"firstName\": \"courier3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/api/v1/courier",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создать заказ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Order4\",\n    \"lastName\": \"Order4\",\n    \"address\": \"ulica 4\",\n    \"metroStation\": 4,\n    \"phone\": \"+44444444444\",\n    \"rentTime\": 4,\n    \"deliveryDate\": \"2020-06-06\",\n    \"comment\": \"Comment\",\n    \"color\": [\n        \"BLACK\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/api/v1/orders",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить курьера",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server_url}}/api/v1/courier/2",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courier",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Залогиниться курьером",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"withoutName\",\n    \"password\": \"1111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/api/v1/courier/login",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courier",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Завершить заказ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{server_url}}/api/v1/orders/finish/1",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"finish",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Посмотреть заказ по номеру",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server_url}}/api/v1/orders/track?t=463822",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"track"
+					],
+					"query": [
+						{
+							"key": "t",
+							"value": "463822"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
