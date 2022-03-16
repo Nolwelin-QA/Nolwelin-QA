@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Nolwelin-QA
-- 👀 I’m interested in QA endineering
+- 👀 I’m interested in QA engineering
 - 🌱 I’m currently learning QA
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me Linkedin: @varvara-korchineli
