@@ -18,6 +18,7 @@
 18	Вывести дату и время:									date
 19	Отправить http запрос на сервер.
 	http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000:			curl http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+                                                                                          curl http://162.55.220.72:5005/terminal-hw-request -> curl http://162.55.220.72:5005/get_method?name=Varvara&age=36
 20	Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:		nano test.sh -> #!/bin/bash
 														echo ""Hello World!""
 														cd test
@@ -28,4 +29,4 @@
 														ls ~/test/
 														find -name "text2.txt"
 														ctrl+x -> Enter ->
-														sudo bash ./test.sh"
+														sudo bash ./test.sh" (в git bash без sudo)
